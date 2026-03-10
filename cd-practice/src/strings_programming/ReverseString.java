@@ -1,4 +1,4 @@
-package collections_framework;
+package strings_programming;
 
 import java.util.Iterator;
 

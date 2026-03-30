@@ -21,5 +21,7 @@ public class DuplicateCharacters {
 		List<Map.Entry<Character, Integer>> list = new ArrayList<Map.Entry<Character,Integer>>(map.entrySet());
 		list.sort(Map.Entry.comparingByValue());
 		System.out.println(list);
+		list.stream().forEach(i -> System.out.println(i.getKey() + " : " + i.getValue()));
+		
 	}
 }

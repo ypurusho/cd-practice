@@ -16,19 +16,11 @@ public class Anagrams {
 	        return false;
 	    }
 	    int count[] = new int[CHARACTER_RANGE];
-	    System.out.println(count.length);
 	    for (int i = 0; i < string1.length(); i++) {
-	    	System.out.println(string1.charAt(i));
-	    	System.out.println(string2.charAt(i));
-	    	System.out.println(count[i]);
-	    	System.out.println("count [" + string1.charAt(i) + "] is ");
-	    	System.out.println(count[string1.charAt(i)]);
-	    	System.out.println(count[string2.charAt(i)]);
 	        count[string1.charAt(i)]++;
 	        count[string2.charAt(i)]--;
 	    }
 	    for (int i = 0; i < CHARACTER_RANGE; i++) {
-	    	System.out.println(count[i]);
 	        if (count[i] != 0) {
 	            return false;
 	        }

@@ -12,10 +12,12 @@ public class MaxSumSubArray {
 	
 	public static int maxSum(int[] arr, int k) {
 		int windowSum = 0;
+		//first window sum from 0 to k
 		for(int i = 0; i < k; i++) {
 			windowSum += arr[i];
 		}
 		int maxSum = windowSum;
+		//calculate next window sum by remove the element that goes out of window and add element which comes in 
 		for(int i=k; i< arr.length; i++) {
 			windowSum = windowSum + arr[i] - arr[i-k];
 			maxSum = Math.max(maxSum, windowSum);

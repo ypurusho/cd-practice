@@ -18,5 +18,19 @@ public class CountEmployeesByDepartment {
 		
 		Map<String, Long> map = list.stream().collect(Collectors.groupingBy(Employee::getDepartment, Collectors.counting()));
 		map.entrySet().forEach(System.out::println);
+		
+		//byte > short > int > long > float > double
+		double d = 4;
+		long l = 4;
+		double f = 4f;
+		byte b = 4;
+		short s = 4;
+		int in = (int) 4.0;
+		System.out.println(s);
+		System.out.println(b);
+		System.out.println(f);
+		System.out.println(l);
+		System.out.println(d);
+		System.out.println(in);
 	}
 }
